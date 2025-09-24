@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.6.0" type="conditional_incidents">
+
+    <incident
+        id="DuplicatePlatformClasses"
+        severity="fatal"
+        message="`json` defines classes that conflict with classes now provided by Android. Solutions include finding newer versions or alternative libraries that don&apos;t have the same problem (for example, for `httpclient` use `HttpUrlConnection` or `okhttp` instead), or repackaging the library using something like `jarjar`.">
+        <fix-replace
+            description="Delete dependency"
+            replacement=""
+            priority="0"/>
+        <location
+            file="${:bear-block_callx*projectDir}/build.gradle"
+            line="109"
+            column="3"
+            startOffset="2639"
+            endLine="109"
+            endColumn="42"
+            endOffset="2678"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,26 @@
+<lint-module
+    format="1"
+    dir="/Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android"
+    name=":bear-block_callx"
+    type="LIBRARY"
+    maven="91Astrology Astrologer:bear-block_callx:unspecified"
+    agpVersion="8.6.0"
+    buildFolder="build"
+    bootClassPath="/Users/sunny/Library/Android/sdk/platforms/android-35/android.jar:/Users/sunny/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      disable="GradleCompatible"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="GradleCompatible"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>

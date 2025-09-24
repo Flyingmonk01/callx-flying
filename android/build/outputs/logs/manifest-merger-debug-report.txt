@@ -1,0 +1,94 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:1:1-41:12
+INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:1:1-41:12
+	package
+		INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:6:22-63
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:8:5-77
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:8:22-74
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:9:22-74
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:11:22-75
+uses-permission#android.permission.WRITE_CALL_LOG
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:14:5-73
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:14:22-70
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:15:5-72
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:15:22-69
+application
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:17:5-39:19
+activity#com.callx.IncomingCallActivity
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:19:9-28:44
+	android:screenOrientation
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:27:13-49
+	android:turnScreenOn
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:26:13-40
+	android:excludeFromRecents
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:24:13-46
+	android:launchMode
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:23:13-44
+	android:exported
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:22:13-37
+	android:showOnLockScreen
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:25:13-44
+	android:theme
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:21:13-58
+	android:taskAffinity
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:28:13-41
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:20:13-49
+service#com.callx.CallxFirebaseMessagingService
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:31:9-38:19
+	android:exported
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:34:13-37
+	android:directBootAware
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:33:13-43
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:32:13-58
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:35:13-37:29
+	android:priority
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:35:28-48
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:36:17-78
+	android:name
+		ADDED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml:36:25-75
+uses-sdk
+INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sunny/Desktop/91Astro/91astro-astrologer-app/node_modules/@bear-block/callx/android/src/main/AndroidManifest.xml

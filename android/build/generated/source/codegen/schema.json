@@ -1,0 +1,450 @@
+{
+  "modules": {
+    "NativeCallx": {
+      "type": "NativeModule",
+      "aliasMap": {
+        "CallData": {
+          "type": "ObjectTypeAnnotation",
+          "properties": [
+            {
+              "name": "callId",
+              "optional": false,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "callerName",
+              "optional": false,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "callerPhone",
+              "optional": false,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "callerAvatar",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "hasVideo",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "BooleanTypeAnnotation"
+              }
+            },
+            {
+              "name": "endReason",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "timestamp",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "NumberTypeAnnotation"
+              }
+            },
+            {
+              "name": "originalPayload",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "GenericObjectTypeAnnotation"
+              }
+            }
+          ]
+        },
+        "CallxConfig": {
+          "type": "ObjectTypeAnnotation",
+          "properties": [
+            {
+              "name": "fieldMapping",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "GenericObjectTypeAnnotation",
+                "dictionaryValueType": {
+                  "type": "TypeAliasTypeAnnotation",
+                  "name": "FieldMappingConfig"
+                }
+              }
+            },
+            {
+              "name": "triggers",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "GenericObjectTypeAnnotation",
+                "dictionaryValueType": {
+                  "type": "TypeAliasTypeAnnotation",
+                  "name": "TriggerConfigEntry"
+                }
+              }
+            }
+          ]
+        },
+        "FieldMappingConfig": {
+          "type": "ObjectTypeAnnotation",
+          "properties": [
+            {
+              "name": "path",
+              "optional": false,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "fallback",
+              "optional": true,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            }
+          ]
+        },
+        "TriggerConfigEntry": {
+          "type": "ObjectTypeAnnotation",
+          "properties": [
+            {
+              "name": "field",
+              "optional": false,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            },
+            {
+              "name": "value",
+              "optional": false,
+              "typeAnnotation": {
+                "type": "StringTypeAnnotation"
+              }
+            }
+          ]
+        }
+      },
+      "enumMap": {},
+      "spec": {
+        "eventEmitters": [],
+        "methods": [
+          {
+            "name": "initialize",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "config",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "TypeAliasTypeAnnotation",
+                    "name": "CallxConfig"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "showIncomingCall",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "callData",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "TypeAliasTypeAnnotation",
+                    "name": "CallData"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "endCall",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "callId",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "answerCall",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "callId",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "declineCall",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "callId",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "getFCMToken",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "StringTypeAnnotation"
+                }
+              },
+              "params": []
+            }
+          },
+          {
+            "name": "getVoIPToken",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "StringTypeAnnotation"
+                }
+              },
+              "params": []
+            }
+          },
+          {
+            "name": "setFieldMapping",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "field",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                },
+                {
+                  "name": "path",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                },
+                {
+                  "name": "fallback",
+                  "optional": true,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "setTrigger",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "trigger",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                },
+                {
+                  "name": "field",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                },
+                {
+                  "name": "value",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "StringTypeAnnotation"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "getCurrentCall",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "NullableTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TypeAliasTypeAnnotation",
+                    "name": "CallData"
+                  }
+                }
+              },
+              "params": []
+            }
+          },
+          {
+            "name": "isCallActive",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "BooleanTypeAnnotation"
+                }
+              },
+              "params": []
+            }
+          },
+          {
+            "name": "handleFcmMessage",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "VoidTypeAnnotation"
+                }
+              },
+              "params": [
+                {
+                  "name": "data",
+                  "optional": false,
+                  "typeAnnotation": {
+                    "type": "GenericObjectTypeAnnotation",
+                    "dictionaryValueType": {
+                      "type": "StringTypeAnnotation"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "name": "hideFromLockScreen",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "BooleanTypeAnnotation"
+                }
+              },
+              "params": []
+            }
+          },
+          {
+            "name": "moveAppToBackground",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation",
+                "elementType": {
+                  "type": "BooleanTypeAnnotation"
+                }
+              },
+              "params": []
+            }
+          },
+          {
+            "name": "getConfiguration",
+            "optional": false,
+            "typeAnnotation": {
+              "type": "FunctionTypeAnnotation",
+              "returnTypeAnnotation": {
+                "type": "PromiseTypeAnnotation"
+              },
+              "params": []
+            }
+          }
+        ]
+      },
+      "moduleName": "Callx"
+    }
+  }
+}
