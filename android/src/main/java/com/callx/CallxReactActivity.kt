@@ -63,7 +63,7 @@ abstract class CallxReactActivity : ReactActivity() {
      * Handle new intent from IncomingCallActivity
      * This is called when app is launched from lockscreen call answer
      */
-    override fun onNewIntent(intent: Intent?) {
+    final override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
         Log.d(TAG, "📱 CallxReactActivity.onNewIntent called with: ${intent?.extras}")
         
