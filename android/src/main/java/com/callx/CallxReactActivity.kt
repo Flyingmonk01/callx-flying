@@ -63,13 +63,13 @@ abstract class CallxReactActivity : ReactActivity() {
      * Handle new intent from IncomingCallActivity
      * This is called when app is launched from lockscreen call answer
      */
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
-        Log.d(TAG, "📱 CallxReactActivity.onNewIntent called with: ${intent?.extras}")
+        Log.d(TAG, "📱 CallxReactActivity.onNewIntent called with: ${intent.extras}")
         
         // Check if this is from incoming call
-        val fromIncomingCall = intent?.getBooleanExtra("from_incoming_call", false) ?: false
-        val deviceWasLocked = intent?.getBooleanExtra("device_was_locked", false) ?: false
+        val fromIncomingCall = intent.getBooleanExtra("from_incoming_call", false) ?: false
+        val deviceWasLocked = intent.getBooleanExtra("device_was_locked", false) ?: false
         
         Log.d(TAG, "📞 From incoming call: $fromIncomingCall, Device locked: $deviceWasLocked")
         
